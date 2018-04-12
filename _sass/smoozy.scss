@@ -44,8 +44,10 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+
+// @import
+//   "smoozy/base",
+//   "smoozy/layout",
+//   "smoozy/syntax-highlighting",
+//   "smoozy/bootstrap"
+// ;

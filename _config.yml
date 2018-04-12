@@ -7,8 +7,8 @@ description: > # this means to ignore newlines until "twitter_username:"
   Google search results) and in your feed.xml site description.
 
 # social links
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: vvadagon
+github_username:  vadagon
 rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -29,9 +29,9 @@ rss: rss
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
-# Minima date format
+# smoozy date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
+smoozy:
   date_format: "%b %-d, %Y"
 
 # If you want to link only specific pages in your header, uncomment
@@ -40,7 +40,7 @@ minima:
 # - about.html
 
 # Build settings
-theme: minima
+# theme: smoozy
 
 plugins:
  - jekyll-feed
