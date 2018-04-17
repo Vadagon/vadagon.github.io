@@ -67,7 +67,7 @@
 ### Development Fixes
 
   * Remove duplicate .sass-cache  (#71)
-  * Demo minima on GitHub Pages (#76)
+  * Demo smoozy on GitHub Pages (#76)
   * Remove the Rakefile (#118)
 
 ### Documentation
@@ -93,7 +93,7 @@
 
   * priority to site.url when site.github.url is available (#46)
   * Move contents of the index.html page to the 'home' layout (#48)
-  * Use  new `absolute_url` and `relative_url` filters in minima (#57)
+  * Use  new `absolute_url` and `relative_url` filters in smoozy (#57)
 
 ### Development Fixes
 
