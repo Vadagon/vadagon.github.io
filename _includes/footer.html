@@ -1,4 +1,4 @@
-<footer class="site-footer h-card">
+<!-- <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
@@ -32,24 +32,189 @@
 
   </div>
 
-</footer>
+</footer> -->
+
+
+
+  <footer class="footer" id="footer">
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          © <a href="/">Vladyslav Verbytskyi</a> 2018. All code <a href="https://opensource.org/licenses/MIT" target="_blank"> MIT license</a>.
+        </p>
+        <div class="footer-social">
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+          <a href="{{ "/feed.xml" | relative_url }}"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
 
-
-
-
-
-<script type='text/javascript' src='https://vadagon.com/wp-content/themes/latte/assets/bootstrap/js/bootstrap.min.js?ver=4.9.3'></script>
-<script type='text/javascript' src='https://vadagon.com/wp-content/themes/latte/assets/js/parallax.min.js?ver=4.9.3'></script>
-<script type='text/javascript' src='https://vadagon.com/wp-content/themes/latte/assets/js/scrollReveal.min.js?ver=4.9.3'></script>
-<script type='text/javascript' src='https://vadagon.com/wp-content/themes/latte/assets/js/classie.js?ver=4.9.3'></script>
-<script type='text/javascript' src='https://vadagon.com/wp-content/themes/latte/assets/js/jquery.matchHeight.js?ver=4.9.3'></script>
-<script type='text/javascript' src='https://vadagon.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src="{{ "/assets/plugins.min.js" | relative_url }}"></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var latte_script_var = {"latte_preloader_display":"","latte_animations_display":"","latte_is_homepage":"0","latte_parallax_background":"https:\/\/vadagon.com\/wp-content\/themes\/latte\/assets\/images\/background.jpg","latte_menu_display":"","latte_skills_display":"","latte_services_display":"","latte_blogposts_display":""};
+var latte_script_var = {"latte_preloader_display":"","latte_animations_display":"","latte_is_homepage":"0","latte_intro_background":"http:\/\/www.hardeepasrani.com\/demo\/latte\/wp-content\/themes\/latte-pro\/assets\/images\/intro.jpg","latte_about_background":"","latte_social_background":"http:\/\/www.hardeepasrani.com\/demo\/latte\/wp-content\/themes\/latte-pro\/assets\/images\/social.jpg","latte_services_background":"","latte_separator_background":"http:\/\/www.hardeepasrani.com\/demo\/latte\/wp-content\/themes\/latte-pro\/assets\/images\/separator.jpg","latte_skills_background":"","latte_portfolio_background":"","latte_subscribe_background":"http:\/\/www.hardeepasrani.com\/demo\/latte\/wp-content\/themes\/latte-pro\/assets\/images\/subscribe.jpg","latte_pricing_background":"","latte_testimonials_background":"http:\/\/www.hardeepasrani.com\/demo\/latte\/wp-content\/themes\/latte-pro\/assets\/images\/testimonials.jpg","latte_blogposts_background":"","latte_contact_background":"http:\/\/www.hardeepasrani.com\/demo\/latte\/wp-content\/themes\/latte-pro\/assets\/images\/contact.jpg","latte_menu_display":"","latte_intro_display":"","latte_about_display":"","latte_social_display":"","latte_services_display":"","latte_separator_display":"","latte_skills_display":"","latte_portfolio_display":"","latte_subscribe_display":"","latte_pricing_display":"","latte_testimonials_display":"","latte_blogposts_display":"","latte_contact_display":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://vadagon.com/wp-content/themes/latte/assets/js/scripts.js?ver=4.9.3'></script>
+<script type="text/javascript">
+  
+
+
+jQuery(window).load(function() {
+
+  if( latte_script_var.latte_preloader_display != 1 ) {
+    /* Preloader */
+    jQuery(".status").fadeOut();
+    jQuery(".preloader").delay(1000).fadeOut("slow");
+  }
+
+  if( latte_script_var.latte_is_homepage != 1 && latte_script_var.latte_animations_display != 1 ) {
+    /* scrollReval */
+    window.sr = new scrollReveal();
+  }
+
+});
+
+jQuery(document).ready(function($) {
+  if( latte_script_var.latte_is_homepage != 1 ) {
+    /* Smooth Scroll */
+    jQuery('a[href*=#]').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = jQuery(this.hash);
+        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          jQuery('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1200);
+          return false;
+        }
+      }
+    });
+
+    /* Parallax */
+    if( latte_script_var.latte_intro_display != 1 && latte_script_var.latte_intro_background != '' ) {
+      $('#intro').parallax({imageSrc: latte_script_var.latte_intro_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_about_display != 1 && latte_script_var.latte_about_background != '' ) {
+      $('#about').parallax({imageSrc: latte_script_var.latte_about_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_social_display != 1 && latte_script_var.latte_social_background != '' ) {
+      $('#social').parallax({imageSrc: latte_script_var.latte_social_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_services_display != 1 && latte_script_var.latte_services_background != '' ) {
+      $('#services').parallax({imageSrc: latte_script_var.latte_services_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_separator_display != 1 && latte_script_var.latte_separator_background != '' ) {
+      $('#separator').parallax({imageSrc: latte_script_var.latte_separator_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_skills_display != 1 && latte_script_var.latte_skills_background != '' ) {
+      $('#skills').parallax({imageSrc: latte_script_var.latte_skills_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_portfolio_display != 1 && latte_script_var.latte_portfolio_background != '' ) {
+      $('#portfolio').parallax({imageSrc: latte_script_var.latte_portfolio_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_subscribe_display != 1 && latte_script_var.latte_subscribe_background != '' ) {
+      $('#subscribe').parallax({imageSrc: latte_script_var.latte_subscribe_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_pricing_display != 1 && latte_script_var.latte_pricing_background != '' ) {
+      $('#pricing').parallax({imageSrc: latte_script_var.latte_pricing_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_testimonials_display != 1 && latte_script_var.latte_testimonials_background != '' ) {
+      $('#testimonials').parallax({imageSrc: latte_script_var.latte_testimonials_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_blogposts_display != 1 && latte_script_var.latte_blogposts_background != '' ) {
+      $('#blogposts').parallax({imageSrc: latte_script_var.latte_blogposts_background, bleed: '10', androidFix: 'false'});
+    }
+    if( latte_script_var.latte_contact_display != 1 && latte_script_var.latte_contact_background != '' ) {
+      $('#contact').parallax({imageSrc: latte_script_var.latte_contact_background, bleed: '50', androidFix: 'false'});
+    }
+  }
+
+  if( latte_script_var.latte_menu_display != 1 ) {
+    var menuLeft = document.getElementById( 'pmenu' ),
+    showLeftPush = document.getElementById( 'showLeftPush' ),
+    hideLeftPush = document.getElementById( 'hideLeftPush' ),
+    body = document.body;
+
+    showLeftPush.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'pmenu-push-toright' );
+      if (classie.has(showLeftPush,"fa-bars")) {
+        classie.remove(showLeftPush,"fa-bars");
+        classie.add(showLeftPush,"fa-times");
+      } else {
+        classie.add(showLeftPush,"fa-bars");
+      }
+      classie.toggle( menuLeft, 'pmenu-open' );
+      disableOther( 'showLeftPush' );
+    };
+    hideLeftPush.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'pmenu-push-toright' );
+      classie.toggle( menuLeft, 'pmenu-open' );
+      disableOther( 'hideLeftPush' );
+      classie.add(showLeftPush,"fa-bars");
+    };
+
+        function disableOther( button ) {
+      if( button !== 'showLeftPush' ) {
+        classie.toggle( showLeftPush, 'disabled' );
+      }
+    }
+  }
+
+  if( latte_script_var.latte_is_homepage != 1 ) {
+    if( latte_script_var.latte_skills_display != 1 ) {
+      /* Skillbar animation speed */
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },6000);
+      });
+    }
+    /* Apply matchHeight to match services grid */
+    var byRow = $('body').hasClass('pmenu-push');
+    if( latte_script_var.latte_services_display != 1 ) {
+        $('.col-md-12').each(function() {
+          $(this).children('.service-box').matchHeight(byRow);
+        });
+    }
+    if( latte_script_var.latte_portfolio_display != 1 ) {
+            $('#portfolio').imagesLoaded( function() {
+                $('.col-md-12').each(function() {
+                    $(this).children('.portfolio-item').matchHeight(byRow);
+                });
+            });
+    }
+    if( latte_script_var.latte_blogposts_display != 1 ) {
+            $('#blogposts').imagesLoaded( function() {
+                $('.col-md-12').each(function() {
+                    $(this).children('.blog-item').matchHeight(byRow);
+                });
+            });
+    }
+    if( latte_script_var.latte_contact_display != 1 ) {
+      $('.wpcf7-form').each(function() {
+        $(this).find('*').addClass('contact-form');
+      });
+    }
+
+    if( latte_script_var.latte_testimonials_display != 1 ) {
+      /* Enable Swiper for Testimonials */
+      var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        autoplay:10000
+      })
+    }
+  }
+
+});
+
+
+
+</script>

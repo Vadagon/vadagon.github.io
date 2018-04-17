@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+<header class="archive-header">
+  <div class="cover-container row">
+    <div class="inner cover col-md-12">
+      <h1 class="cover-heading" itemprop="name headline"><a href="https://vadagon.com/">{{ page.title | escape }}</a></h1>
+    </div>
+  </div>
+</header>
+
+<div class="container blog">
+  <div class="item row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">   
+      <div class="content">
+        <div class="post-content" itemprop="articleBody">
+          {{ content }} 
+
+          {%- for post in site.posts -%}
+            <div data-sr="ease-in-out wait 0.25s" class="col-md-4 col-sm-6 col-xs-12 blog-item">
+              <div class="item">
+                <a class="item-featured-image" href="https://vadagon.com/blog/what-language-to-learn-in-2018/"><img width="287" height="71" src="https://vadagon.com/wp-content/uploads/2017/12/cropped-wallhaven-342160.jpg" class="attachment-latte-blogposts size-latte-blogposts wp-post-image" alt="programmer circle" srcset="https://vadagon.com/wp-content/uploads/2017/12/cropped-wallhaven-342160.jpg 1500w, https://vadagon.com/wp-content/uploads/2017/12/cropped-wallhaven-342160-410x102.jpg 410w, https://vadagon.com/wp-content/uploads/2017/12/cropped-wallhaven-342160-768x191.jpg 768w, https://vadagon.com/wp-content/uploads/2017/12/cropped-wallhaven-342160-960x239.jpg 960w" sizes="(max-width: 287px) 100vw, 287px" /></a>
+                <div class="item-meta">
+                  <h3 class="post-title">
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                      {{ post.title | escape }}
+                    </a>
+                  </h3>
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</article>
+
