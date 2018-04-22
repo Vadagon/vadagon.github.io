@@ -24,6 +24,8 @@ This way will be perfect if you want to become a little GOD… Proficiency in an
 
 ## 3. JavaScript
 Not to be confused with Java, JavaScript is primarily a client-side scripting language used for interface-level development. JavaScript is compatible in all browsers and is used to create interactive web applications, often through libraries such as jQuery and interface systems such as AngularJS, Ember.js, React and others.
+![JavaScript]({{site.baseurl}}/assets/images/javascript-logo-1-250x141.png)
+
 JavaScript can also be used as a server language via the Node.js. Not so long ago, Node.js was still very young, but since then its community has grown dramatically, and now you can find a lot of resources on the Internet.
 You can also create hybrid mobile applications using JavaScript using frameworks such as phonegap, while React Native from Facebook allows you to create high-performance mobile applications with JavaScript.
 
@@ -31,6 +33,3 @@ You can also create hybrid mobile applications using JavaScript using frameworks
 If you newbie or just want to create applications you solution is JavaScript, but if you want to dive deeper and become are really skillful you should choose one of the languages from second way.
 
 Anyway it will good choice to learn how to programming… Good luck!
-
-
-
