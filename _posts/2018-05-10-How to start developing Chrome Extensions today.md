@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Hey! You are interesting in developing chrome extensions if you are here... Yes, my name's Sherlock.
 OK, here you will find out about only basic principles of developing extensions + tips how to dive deeper when you will be ready.
@@ -21,6 +21,7 @@ But you can do a different way (the way that I passes, BTW):
 - options.html
 _Only manifest.json is required_ 
 ## manifest file example
+{% highlight javascript %}
 {
     "name": "Sample Extension",
     "version": "0.1",
@@ -67,6 +68,7 @@ _Only manifest.json is required_
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "minimum_chrome_version": "50"
 }
+{% endhighlight %}
 If you don't need content scripts, for example, just delete _contentscripts_ key and all it's content.
 ## How to communicate between scripts
 Communication between extensions and their content scripts works by using message passing. Either side can listen for messages sent from the other end, and respond on the same channel. A message can contain any valid JSON object (null, boolean, number, string, array, or object). There is a simple API for one-time requests
@@ -99,5 +101,3 @@ On the receiving end, you need to set up an runtime.onMessage event listener to 
     }); 
   
 In the above example, sendResponse was called synchronously. If you want to asynchronously use sendResponse, add return true; to the onMessage event handler.
- 
-
