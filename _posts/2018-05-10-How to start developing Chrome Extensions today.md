@@ -107,3 +107,8 @@ On the receiving end, you need to set up an runtime.onMessage event listener to 
     }); 
 {% endhighlight %}
 In the above example, sendResponse was called synchronously. If you want to asynchronously use sendResponse, add return true; to the onMessage event handler.
+## Conclusion
+Google Chrome is VERY powerfull _application_! It has extremely rich API, so you can build almost everything. Now, just sit a while and let code absorb you. 
+There is a **bonus** for you (as 'thank you for reading this') that will boostrap you learning curse. This is  [chrome extension source viewer ](https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin). 
+Also, if you have a questions feel free to ask it in a comment. Piece!
+
