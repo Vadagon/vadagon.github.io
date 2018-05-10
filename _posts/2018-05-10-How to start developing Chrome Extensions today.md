@@ -75,7 +75,7 @@ _Only manifest.json is required_
     "minimum_chrome_version": "50"
 }
 {% endhighlight %}
-If you don't need content scripts, for example, just delete _contentscripts_ key and all it's content.
+If you don't need content scripts, for example, just delete **content_scripts** key and all it's content.
 ## How to communicate between scripts
 Communication between extensions and their content scripts works by using message passing.  
 Either side can listen for messages sent from the other end, and respond on the same channel. A message can contain any valid JSON object (null, boolean, number, string, array, or object).  
@@ -118,4 +118,3 @@ Google Chrome is VERY powerfull _application_! It has extremely rich API, so you
 There is a **bonus** for you (as 'thank you for reading this') that will boostrap you learning curse. This is  [chrome extension source viewer](https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin).
 
 Also, if you have a questions feel free to ask it in a comment. Piece!
-
