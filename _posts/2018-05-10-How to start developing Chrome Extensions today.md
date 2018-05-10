@@ -5,21 +5,27 @@ Hey! You are interesting in developing chrome extensions if you are here... Yes,
 OK, here you will find out about only basic principles of developing extensions + tips how to dive deeper when you will be ready.
 Let's start from reqired skill to make you sure that you are able to understand this article.
 ## Requirements
+
 - HTML
 - JavaScript
+
 That's all =)
 ## Remark 
 Below are explanations to make process of extension development clear and easy.
 But you can do a different way (the way that I passes, BTW):
+
 - visit [GitHub repo](https://github.com/orbitbot/chrome-extensions-examples) with Chrome extensions examples 
 - And learn about what do you need to know using this [official docmentation](https://developer.chrome.com/extensions/devguide)
+
 ## Simpliefied structure of an extension
+
 - manifest.json (this is all about your extension)
 - popup.html (it uses to dispay popup window)
 - background.js (a script that running in a background)
 - content.js (a script that injects to users' web experience)
 - options.html
 _Only manifest.json is required_ 
+
 ## manifest file example
 {% highlight javascript %}
 {
@@ -76,21 +82,21 @@ Communication between extensions and their content scripts works by using messag
 If you only need to send a single message to another part of your extension (and optionally get a response back), you should use the simplified runtime.sendMessage or tabs.sendMessage . This lets you send a one-time JSON-serializable message from a content script to extension , or vice versa, respectively . An optional callback parameter allows you handle the response from the other side, if there is one.
 
 Sending a request from a content script looks like this:
-
+{% highlight javascript %}
   chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
     console.log(response.farewell);
   });
-
+{% endhighlight %}
 Sending a request from the extension to a content script looks very similar, except that you need to specify which tab to send it to. This example demonstrates sending a message to the content script in the selected tab.
-
+{% highlight javascript %}
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
       console.log(response.farewell);
     });
   });
-
+{% endhighlight %}
 On the receiving end, you need to set up an runtime.onMessage event listener to handle the message. This looks the same from a content script or extension page.
-
+{% highlight javascript %}
   chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
       console.log(sender.tab ?
@@ -99,5 +105,5 @@ On the receiving end, you need to set up an runtime.onMessage event listener to 
       if (request.greeting == "hello")
         sendResponse({farewell: "goodbye"});
     }); 
-  
+{% endhighlight %}
 In the above example, sendResponse was called synchronously. If you want to asynchronously use sendResponse, add return true; to the onMessage event handler.
