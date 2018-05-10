@@ -1,8 +1,8 @@
 ---
 published: true
 ---
-Hey! You are interesting in developing chrome extensions if you are here... Yes, my name's Sherlock.
-OK, here you will find out about only basic principles of developing extensions + tips how to dive deeper when you will be ready.
+Hey! You are interesting in developing chrome extensions if you are here... Yes, my name's Sherlock.  
+OK, here you will find out about only basic principles of developing extensions + tips how to dive deeper when you will be ready.  
 Let's start from reqired skill to make you sure that you are able to understand this article.
 ## Requirements
 
@@ -11,8 +11,8 @@ Let's start from reqired skill to make you sure that you are able to understand 
 
 That's all =)
 ## Remark 
-Below are explanations to make process of extension development clear and easy.
-But you can do a different way (the way that I passes, BTW):
+Below are explanations about how to make process of extension development clear and easy.
+But you can do a different way (the way that I passed):
 
 - visit [GitHub repo](https://github.com/orbitbot/chrome-extensions-examples) with Chrome extensions examples 
 - And learn about what do you need to know using this [official docmentation](https://developer.chrome.com/extensions/devguide)
@@ -77,7 +77,9 @@ _Only manifest.json is required_
 {% endhighlight %}
 If you don't need content scripts, for example, just delete _contentscripts_ key and all it's content.
 ## How to communicate between scripts
-Communication between extensions and their content scripts works by using message passing. Either side can listen for messages sent from the other end, and respond on the same channel. A message can contain any valid JSON object (null, boolean, number, string, array, or object). There is a simple API for one-time requests
+Communication between extensions and their content scripts works by using message passing.  
+Either side can listen for messages sent from the other end, and respond on the same channel. A message can contain any valid JSON object (null, boolean, number, string, array, or object).  
+There is a simple API for one-time requests
 ### Simple one-time requests
 If you only need to send a single message to another part of your extension (and optionally get a response back), you should use the simplified runtime.sendMessage or tabs.sendMessage . This lets you send a one-time JSON-serializable message from a content script to extension , or vice versa, respectively . An optional callback parameter allows you handle the response from the other side, if there is one.
 
@@ -87,7 +89,8 @@ Sending a request from a content script looks like this:
     console.log(response.farewell);
   });
 {% endhighlight %}
-Sending a request from the extension to a content script looks very similar, except that you need to specify which tab to send it to. This example demonstrates sending a message to the content script in the selected tab.
+Sending a request from the extension to a content script looks very similar, except that you need to specify which tab to send it to.   
+This example demonstrates sending a message to the content script in the selected tab.
 {% highlight javascript %}
   chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
@@ -106,9 +109,9 @@ On the receiving end, you need to set up an runtime.onMessage event listener to 
         sendResponse({farewell: "goodbye"});
     }); 
 {% endhighlight %}
-In the above example, sendResponse was called synchronously. If you want to asynchronously use sendResponse, add return true; to the onMessage event handler.
+> In the above example, sendResponse was called synchronously. If you want to asynchronously use sendResponse, add return true; to the onMessage event handler.
 ## Conclusion
-Google Chrome is VERY powerfull _application_! It has extremely rich API, so you can build almost everything. Now, just sit a while and let code absorb you. 
-There is a **bonus** for you (as 'thank you for reading this') that will boostrap you learning curse. This is  [chrome extension source viewer ](https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin). 
+Google Chrome is VERY powerfull _application_! It has extremely rich API, so you can build almost everything. Now, just sit a while and let code absorb you.   
+There is a **bonus** for you (as 'thank you for reading this') that will boostrap you learning curse. This is  [chrome extension source viewer](https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin).  
 Also, if you have a questions feel free to ask it in a comment. Piece!
 
