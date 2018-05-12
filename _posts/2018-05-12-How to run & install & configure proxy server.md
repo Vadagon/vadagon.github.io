@@ -2,7 +2,7 @@
 published: true
 ---
 Hi there!  
-Nowadays, everyone needs a **VPN**... Bolow I explain and show how to do it from **scratch**.
+Nowadays, everyone needs a **VPN**... Bolow I explain and show how to do it from **scratc**.
 
 ## Getting a server (run)
 The easiest way to get it is to [register a free 1 year Amazon account](https://portal.aws.amazon.com/billing/signup). It's a very generous offer from amazon, 1 year of free server using, isn't it?
@@ -25,7 +25,7 @@ If so, just follow this steps:
 
 ## Configuration of a basic proxy server
 The configuration of the **Squid Proxy Server** is handled in the _/etc/squid/squid.conf_. I will show you how to configure a very basic proxy server:
-1. type `nano /etc/squid/squid.conf`
+1. type `sudo nano /etc/squid/squid.conf`
 2. press Ctrl/Cmd + W and type `http_access deny all` 
 3. change `http_access deny all` to `http_access allow` 
 4. press Ctrl/Cmd + O to save and Ctrl/Cmd + W to exit
