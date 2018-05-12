@@ -2,7 +2,7 @@
 published: true
 ---
 Hi there!  
-Nowadays, everyone needs a **VPN**... Bolow I explain and show how to do it from _scratch_.
+Nowadays, everyone needs a **VPN**... Bolow I explain and show how to do it from **scratc**.
 
 ## Getting a server (run)
 The easiest way to get it is to [register a free 1 year Amazon account](https://portal.aws.amazon.com/billing/signup). It's a very generous offer from amazon, 1 year of free server using, isn't it?
