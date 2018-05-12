@@ -10,14 +10,14 @@ The easiest way to get it is to [register a free 1 year Amazon account](https://
 Well, [here is step by step instruction](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/) of how to do it. Except a two moments:
 1. Choose **Ubuntu 16.04**  not Amazon Machine Image (AMI)
 2. While configuring you should set security group like here I have:
-![security group of instance inbound all]({{site.baseurl}}/_posts/screenshot-us-east-2.console.aws.amazon.com-2018.05.12-08-42-31.png)
-![security group of instance outbound all]({{site.baseurl}}/_posts/screenshot-us-east-2.console.aws.amazon.com-2018.05.12-08-44-01.png)
+![security group of instance inbound all]({{site.baseurl}}/imgs/screenshot-us-east-2.console.aws.amazon.com-2018.05.12-08-42-31.png)
+![security group of instance outbound all]({{site.baseurl}}/imgs/screenshot-us-east-2.console.aws.amazon.com-2018.05.12-08-44-01.png)
 
 Ususally, it takes 5 minutes to run and connect to a server.
 
 ## Installation proxy enviroment
 To continue you should be connected to your server like this:
-![running ssh remote connection]({{site.baseurl}}/_posts/Screenshot_2018-05-12_08-54-05.png)
+![running ssh remote connection]({{site.baseurl}}/imgs/Screenshot_2018-05-12_08-54-05.png)
 If so, just follow this steps:
 1. type `sudo apt-get update`
 2. type `sudo apt-get upgrade`

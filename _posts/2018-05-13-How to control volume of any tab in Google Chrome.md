@@ -4,7 +4,7 @@ published: true
 Do you listen to quite a lot of music or audio on your web browser and strugling with volume balance of each source? If so this article is for you =)
 
 Recently I developed [chrome extension](https://chrome.google.com/webstore/detail/volume-manager/kakeffogmhndegdafnbobknemagiikak) that is going to help you. 
-![popup.png]({{site.baseurl}}/popup.png)
+![popup.png]({{site.baseurl}}/imgs/popup.png)
 Below I describe how to release full potential of of using it.
  
 ## Volume Mixer for Chrome tabs
