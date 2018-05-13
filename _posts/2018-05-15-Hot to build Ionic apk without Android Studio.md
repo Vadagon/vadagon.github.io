@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Hey there! I think this is stupidity and waste of resources to install _whole Android Studio_.
 So here I will explain how to in minutes **generate installable apk without Android Studio**.
