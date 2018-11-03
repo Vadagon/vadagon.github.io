@@ -43,4 +43,4 @@ relative path to it `platforms/android/app/build/outputs/apk/release/app-release
 ## Conclusion
 That's it! You have HelloWorld.apk in your hove directory.
 
-[Source](https://verblike.com/how-to-build-application-without-android-studio/)
+[Source](https://verblike.com/blog/how-to-build-application-without-android-studio/)
