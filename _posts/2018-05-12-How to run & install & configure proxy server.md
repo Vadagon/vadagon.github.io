@@ -41,4 +41,6 @@ Now go to proxy settings of your browser or of operating system and input recent
 
 ## Conclusion
 That's it. Hope you like your result and it took not more time than I have the article writing =).
-Also, I will be happy if you leave a comment about the article. Piece!
+
+
+[Source](https://verblike.com/blog/how-to-run-install-configure-proxy-server/ "Source")
