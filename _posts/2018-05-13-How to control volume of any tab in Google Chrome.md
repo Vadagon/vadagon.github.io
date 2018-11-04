@@ -32,3 +32,6 @@ Right Click on the icon -> Options to go to the Settings.
 ## Conclusion
 Hope you will find my little creation usefull. 
 Also feel free to suggest new features or tell me about bug or even say "thank you" in the comments.
+
+
+[Source](https://verblike.com/blog/chrome-extension-to-control-volume-of-any-tab/ "Source")
