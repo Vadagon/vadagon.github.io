@@ -120,4 +120,4 @@ There is a **bonus** for you (as 'thank you for reading this') that will boostra
 Also, if you have a questions feel free to ask it in a comment. Piece!
 
 
-[Source](https://verblike.com/blog/how-to-start-developing-chrome-extensions-today/ "Source")
+[Source](https://verblike.com/post/how-to-start-developing-chrome-extensions-today/ "Source")

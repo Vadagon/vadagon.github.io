@@ -43,4 +43,4 @@ Now go to proxy settings of your browser or of operating system and input recent
 That's it. Hope you like your result and it took not more time than I have the article writing =).
 
 
-[Source](https://verblike.com/blog/how-to-run-install-configure-proxy-server/ "Source")
+[Source](https://verblike.com/post/how-to-run-install-configure-proxy-server/ "Source")
